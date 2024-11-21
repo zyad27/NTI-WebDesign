@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+    border: 0px;
+}
+
+body{
+    background-color: #37AFE1;
+}
+
+
+h1, h2{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    letter-spacing: 1.5px;
+}
+
+form{   
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin: 70px 0 0 20%;
+    padding: 20px;
+}
+
+input, textarea {
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.form-div input{
+    width: 45%;
+}
+
+.form-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: yellow;
+    font-size: 1rem;
+    padding: 5px 10px;
+    width: 40%;
+    align-self: flex-end;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.description {
+    margin-right: 20%;
+    color: white;
+}
+
+p{
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    word-spacing: 1.5px;
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+.main-p {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+p span {
+    color: yellow;
+}
+
+ul {
+    margin-top: 50px;
+    list-style-type: disc;
+    list-style-position: inside;
+    line-height: 2;
+}
