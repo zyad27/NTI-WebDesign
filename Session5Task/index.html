@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session5Task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Parkinsans:wght@300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="top-nav" class="p2-h p1-v bg-light d-flex space-between full-width">
+        <div class="d-flex space-around half-width">
+            <h5>Country : Egypt</h5>
+            <h5>Language : Arabic</h5>
+            <h5>Currency : EGP</h5>
+        </div>
+        <div class="half-width d-flex space-around">
+            <div id="Phone-icon" class="d-flex"><i class="fa-solid fa-phone m1-h"></i><h5>+33 4775 558 8889</h5></div>
+            <div class="d-flex ">
+                <div class="p-relative">
+                    <i class="fa-regular fa-envelope m1-h"></i>
+                    <div id="msg" class="p-absolute notify">7</div>
+                </div>
+                <h5>Messages</h5>
+            </div>
+            <div class="d-flex"><i class="fa-regular fa-user m1-h"></i><h5>Username</h5></div>
+        </div>
+    </nav>
+
+    <nav id="middle-nav" class="container d-flex space-between p1-v ">
+        <h3>Commerce</h3>
+        <div id="search-bar">
+            <form action="#">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <input type="text" name="search" placeholder="Search By Product">
+            </form>
+        </div>
+        <button type="reset" class="bttn">Quick Order form</button>
+    </nav>
+
+    <nav id="bottom-nav" class="p2-h p1-v bg-light d-flex space-between full-width align-center">
+        <div class="d-flex half-width space-around">
+            <h4>Home&Garden</h4>
+            <h4>Motors</h4>
+            <h4>Electronics</h4>
+            <h4>Office Equipment</h4>
+        </div>
+        <div class="d-flex qrt-width space-between align-center">
+            <div id="btm-icon">
+                <div class="p-relative"><i class="fa-solid fa-shield-halved "></i>
+                    <div id="btm-msg" class="p-absolute notify">5</div>
+                </div>
+                <h5>COMPARE</h5>
+            </div>
+
+            <div id="btm-icon" class="p-relative">
+                <div class="p-relative"><i class="fa-regular fa-star"></i>
+                    <div id="btm-msg" class="p-absolute notify">3</div>
+                </div>
+                
+                <h5>FAVOURITES</h5>
+            </div>
+
+            <div id="btm-icon" class="p-relative">
+                <div class="p-relative"><i class="fa-solid fa-cart-shopping"></i>
+                    <div id="btm-msg" class="p-absolute notify">21</div>
+                </div>
+                
+                <h5>CART</h5>
+            </div>
+        </div>
+    </nav>
+
+    <section id="our-brands" class="container p2-v">
+        <div class="d-flex space-between">
+            <h2>Our Brands</h2>
+            <h5 class="side-h5">Show All Products <i class="fa-solid fa-arrow-right"></i></h5>
+        </div>
+        <div class="container p1-v d-flex space-between">
+            <img src="images/brands logo/logo.png" alt="" class="img-fluid">
+            <img src="images/brands logo/image.png" alt="" class="img-fluid">
+            <img src="images/brands logo/image (1).png" alt="" class="img-fluid">
+            <img src="images/brands logo/image (2).png" alt="" class="img-fluid">
+        </div>
+    </section>
+
+    <section id="rcmnd-product" class="container">
+        <div class="d-flex space-between p2-v">
+            <h2>Recommended Products</h2>
+            <h5 class="side-h5">Show All Recommended Products <i class="fa-solid fa-arrow-right"></i></h5>
+        </div>
+        <div id="products-container" class="d-flex space-between">
+            <div id="product-card">
+                <div class="p-relative">
+                    <img src="images/products/product image (1).png" alt="">
+                    <i class="fa-regular fa-star pr-color icons-bg p-absolute"></i>
+                <i class="fa-solid fa-shield-halved pr-color p-absolute"></i>
+                <i class="fa-solid fa-share-nodes pr-color p-absolute"></i>
+                <div id="discount" class="p-absolute">-30%</div>
+                <div id="inStock" class="p-absolute check-icons"><i class="fa-regular fa-circle-check"></i> in stock</div>
+                </div>
+                <div id="product-details">
+                    <p class="muted-text">Good Home | Part no.125</p>
+                    <h3>Countertop washbasin GoodHome Tekapo</h3>
+                    <p>Basin width : 45 cm</p>
+                    <p>Basin width : 45 cm</p>
+                    <p>Basin width : 45 cm</p>
+                    <h5 class="pr-color">Your Price <b>$45.50</b> net <span class="sc-color"><s>$65.00 net</s></span></h5>
+                </div>
+                <form action="#" class="full-width d-flex space-between p2-v">
+                    <input type="text" placeholder="1">
+                    <select name="items">
+                        <option value="itm">Item</option>
+                        <option value="itm">Item</option>
+                        <option value="itm">Item</option>
+                        <option value="itm">Item</option>
+                    </select>
+                </form>
+                <button class="bttn full-width">Add to Cart <i class="fa-solid fa-chevron-down"></i></button>
+            </div>
+            <div id="product-card">
+                <div class="p-relative">
+                    <img src="images/products/product image.png" alt="">
+                    <i class="fa-regular fa-star pr-color icons-bg p-absolute"></i>
+                <i class="fa-solid fa-shield-halved pr-color p-absolute"></i>
+                <i class="fa-solid fa-share-nodes pr-color p-absolute"></i>
+                <div id="discount" class="p-absolute">-30%</div>
+                <div id="inStock" class="p-absolute check-icons"><i class="fa-regular fa-circle-check"></i> in stock</div>
+                </div>
+                <div id="product-details">
+                    <p class="muted-text">Good Home | Part no.125</p>
+                    <h3>Countertop washbasin GoodHome Tekapo</h3>
+                    <p>Basin width : 45 cm</p>
+                    <p>Basin width : 45 cm</p>
+                    <p>Basin width : 45 cm</p>
+                    <h5 class="pr-color">Your Price <b>$45.50</b> net <span class="sc-color"><s>$65.00 net</s></span></h5>
+                </div>
+                <form action="#" class="full-width d-flex space-between p2-v">
+                    <input type="text" placeholder="1">
+                    <select name="items">
+                        <option value="itm">Item</option>
+                        <option value="itm">Item</option>
+                        <option value="itm">Item</option>
+                        <option value="itm">Item</option>
+                    </select>
+                </form>
+                <button class="bttn full-width">Add to Cart <i class="fa-solid fa-chevron-down"></i></button>
+            </div>
+            <div id="product-card">
+                <div class="p-relative">
+                    <img src="images/products/product image (1).png" alt="">
+                    <i class="fa-regular fa-star pr-color icons-bg p-absolute"></i>
+                <i class="fa-solid fa-shield-halved pr-color p-absolute"></i>
+                <i class="fa-solid fa-share-nodes pr-color p-absolute"></i>
+                <div id="discount" class="p-absolute">-30%</div>
+                <div id="inStock" class="p-absolute check-icons"><i class="fa-regular fa-circle-check"></i> in stock</div>
+                </div>
+                <div id="product-details">
+                    <p class="muted-text">Good Home | Part no.125</p>
+                    <h3>Countertop washbasin GoodHome Tekapo</h3>
+                    <p>Basin width : 45 cm</p>
+                    <p>Basin width : 45 cm</p>
+                    <p>Basin width : 45 cm</p>
+                    <h5 class="pr-color">Your Price <b>$45.50</b> net <span class="sc-color"><s>$65.00 net</s></span></h5>
+                </div>
+                <form action="#" class="full-width d-flex space-between p2-v">
+                    <input type="text" placeholder="1">
+                    <select name="items">
+                        <option value="itm">Item</option>
+                        <option value="itm">Item</option>
+                        <option value="itm">Item</option>
+                        <option value="itm">Item</option>
+                    </select>
+                </form>
+                <button class="bttn full-width">Add to Cart <i class="fa-solid fa-chevron-down"></i></button>
+            </div>
+            <div id="product-card">
+                <div class="p-relative">
+                    <img src="images/products/product image.png" alt="">
+                    <i class="fa-regular fa-star pr-color icons-bg p-absolute"></i>
+                <i class="fa-solid fa-shield-halved pr-color p-absolute"></i>
+                <i class="fa-solid fa-share-nodes pr-color p-absolute"></i>
+                <div id="discount" class="p-absolute">-30%</div>
+                <div id="inStock" class="p-absolute check-icons"><i class="fa-regular fa-circle-check"></i> in stock</div>
+                </div>
+                <div id="product-details">
+                    <p class="muted-text">Good Home | Part no.125</p>
+                    <h3>Countertop washbasin GoodHome Tekapo</h3>
+                    <p>Basin width : 45 cm</p>
+                    <p>Basin width : 45 cm</p>
+                    <p>Basin width : 45 cm</p>
+                    <h5 class="pr-color">Your Price <b>$45.50</b> net <span class="sc-color"><s>$65.00 net</s></span></h5>
+                </div>
+                <form action="#" class="full-width d-flex space-between p2-v">
+                    <input type="text" placeholder="1">
+                    <select name="items">
+                        <option value="itm">Item</option>
+                        <option value="itm">Item</option>
+                        <option value="itm">Item</option>
+                        <option value="itm">Item</option>
+                    </select>
+                </form>
+                <button class="bttn full-width">Add to Cart <i class="fa-solid fa-chevron-down"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="offer" class="full-width bg-primary d-flex space-around align-center m1-v">
+        <div id="offer-img"><img src="images/image-offer.png" alt="" class="img-fluid"></div>
+        <div id="offer-text"><h2><span>-20%</span> on power tools</h2></div>
+        <button class="bttn">Check Offer</button>
+    </section>
+
+    <section id="rec-categories" class="container m1-v">
+        <div class="d-flex space-between p2-v">
+            <h2>Recommended Categories</h2>
+            <h5 class="side-h5">Show All Categories <i class="fa-solid fa-arrow-right"></i></h5>
+        </div>
+        <div id="categories-container" class="d-flex space-between">
+            <div id="categories-card" class="d-flex flex-column qrt-width">
+                <img src="images/categories/image.png" alt="" class="img-fluid">
+                <div id="cat-titles" class="bg-primary">Photovoltaics</div>
+            </div>
+
+            <div id="categories-card" class="d-flex flex-column qrt-width">
+                <img src="images/categories/image (1).png" alt="" class="img-fluid">
+                <div id="cat-titles" class="bg-primary">Electronics</div>
+            </div>
+
+            <div id="categories-card" class="d-flex flex-column qrt-width">
+                <img src="images/categories/image (2).png" alt="" class="img-fluid">
+                <div id="cat-titles" class="bg-primary">Light Sources</div>
+            </div>
+
+            <div id="categories-card" class="d-flex flex-column qrt-width">
+                <img src="images/categories/image (3).png" alt="" class="img-fluid">
+                <div id="cat-titles" class="bg-primary">Ventilation and Heating</div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hint" class="container m5-v">
+        <div class="d-flex space-between p2-v">
+            <h2>Hints for you</h2>
+            <h5 class="side-h5">Show All Hints <i class="fa-solid fa-arrow-right"></i></h5>
+        </div>
+
+        <div id="hint-card-container" class="d-flex space-between">
+            <div id="hint-card" class="d-flex flex-column qrt-width">
+                <img src="images/hints/image.png" alt="" class="img-fluid m1-v">
+                <h3 class="m1-v">How much does it cost to finish an apartment?</h3>
+                <p class="m1-v">Are you standing on the threshold of your own "M", to which you have just picked up the keys, and with the eye...</p>
+                <h5 class="side-h5 m1-v">Read More <i class="fa-solid fa-arrow-right"></i></h5>
+            </div>
+
+            <div id="hint-card" class="d-flex flex-column qrt-width">
+                <img src="images/hints/image (1).png" alt="" class="img-fluid m1-v">
+                <h3 class="m1-v">How much does it cost to finish an apartment?</h3>
+                <p class="m1-v">Are you standing on the threshold of your own "M", to which you have just picked up the keys, and with the eye...</p>
+                <h5 class="side-h5 m1-v">Read More <i class="fa-solid fa-arrow-right"></i></h5>
+            </div>
+
+            <div id="hint-card" class="d-flex flex-column qrt-width">
+                <img src="images/hints/image (2).png" alt="" class="img-fluid m1-v">
+                <h3 class="m1-v">How much does it cost to finish an apartment?</h3>
+                <p class="m1-v">Are you standing on the threshold of your own "M", to which you have just picked up the keys, and with the eye...</p>
+                <h5 class="side-h5 m1-v">Read More <i class="fa-solid fa-arrow-right"></i></h5>
+            </div>
+
+            <div id="hint-card" class="d-flex flex-column qrt-width">
+                <img src="images/hints/image (3).png" alt="" class="img-fluid m1-v">
+                <h3 class="m1-v">How much does it cost to finish an apartment?</h3>
+                <p class="m1-v">Are you standing on the threshold of your own "M", to which you have just picked up the keys, and with the eye...</p>
+                <h5 class="side-h5 m1-v">Read More <i class="fa-solid fa-arrow-right"></i></h5>
+            </div>
+        </div>
+    </section>
+
+    <section id="split-screen" class="container m5-v d-flex space-between">
+        <div><img src="images/image-split.png" alt="" class="img-fluid"></div>
+        <div id="split-info" class="bg-primary">
+            <h2>Buy this bundle and save $100</h2>
+            <p>Longer sentence, for just two lines <br> and it could be very very long</p>
+            <button class="bttn">Buy This Bundle</button>
+        </div>
+    </section>
+
+    <section id="new" class="container d-flex space-between m5-v">
+        <div id="orng-card" class="d-flex">
+            <div class="bg-secondary d-flex justify-center align-center">New Tool Kits</div>
+            <div><img src="images/orange section/image.png" alt="" class="img-fluid"></div>
+        </div>
+
+        <div id="orng-card" class="d-flex">
+            <div class="bg-secondary d-flex justify-center align-center">New rules for wind farms!</div>
+            <div><img src="images/orange section/image (1).png" alt="" class="img-fluid"></div>
+        </div>
+
+        <div id="orng-card" class="d-flex">
+            <div class="bg-secondary d-flex justify-center align-center">New iPhone now available!</div>
+            <div><img src="images/orange section/image (2).png" alt="" class="img-fluid"></div>
+        </div>
+    </section>
+
+    <section id="van" class="p2-h d-flex space-around m5-v bg-light">
+        <div id="van-info" class="half-width">
+            <h2>DPD delivery already available!</h2>
+            <p>Choose DPD for speed, ease and convenience.  Track your parcel in real time. This will help you plan your work while waiting for the parcel.</p>
+            <button class="bttn">Show More</button>
+        </div>
+        <div class="half-width"><img src="images/image-van.png" alt=""></div>
+    </section>
+
+    <section id="events" class="container m5-v">
+        <div class="d-flex space-between p2-v">
+            <h2>Events for you</h2>
+            <h5 class="side-h5">Show All Events <i class="fa-solid fa-arrow-right"></i></h5>
+        </div>
+
+        <div id="event-card-container" class="d-flex space-between">
+            <div id="event-card" class="d-flex flex-column qrt-width">
+                <img src="images/events/image.png" alt="" class="img-fluid m1-v">
+                <h3 class="m1-v">Electrician course for electricians with SEP licence</h3>
+                <h5 class="side-h5 m1-v">23.05.2021 | London, UK</h5>
+                <p class="m1-v">This course is conducted in the form of lectures via the Internet and ends with an examination, also online...</p>
+                <button class="bttn m1-v">Know More</button>
+            </div>
+
+            <div id="event-card" class="d-flex flex-column qrt-width">
+                <img src="images/events/image (1).png" alt="" class="img-fluid m1-v">
+                <h3 class="m1-v">Electrician course for electricians with SEP licence</h3>
+                <h5 class="side-h5 m1-v">23.05.2021 | London, UK</h5>
+                <p class="m1-v">This course is conducted in the form of lectures via the Internet and ends with an examination, also online...</p>
+                <button class="bttn m1-v">Know More</button>
+            </div>
+
+            <div id="event-card" class="d-flex flex-column qrt-width">
+                <img src="images/events/image (2).png" alt="" class="img-fluid m1-v">
+                <h3 class="m1-v">Electrician course for electricians with SEP licence</h3>
+                <h5 class="side-h5 m1-v">23.05.2021 | London, UK</h5>
+                <p class="m1-v">This course is conducted in the form of lectures via the Internet and ends with an examination, also online...</p>
+                <button class="bttn m1-v">Know More</button>
+            </div>
+
+            <div id="event-card" class="d-flex flex-column qrt-width">
+                <img src="images/events/image (3).png" alt="" class="img-fluid m1-v">
+                <h3 class="m1-v">Electrician course for electricians with SEP licence</h3>
+                <h5 class="side-h5 m1-v">23.05.2021 | London, UK</h5>
+                <p class="m1-v">This course is conducted in the form of lectures via the Internet and ends with an examination, also online...</p>
+                <button class="bttn m1-v">Know More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="last-sec" class="full-width p2-h bg-light d-flex space-between m5-v">
+        <div id="sign-in">
+            <h3 class="m1-v">Sign Up for news</h3>
+            <p class="m1-v">Keep up to date with the latest product launches and news. Find out more about our brands and get special promo codes</p>
+            <form action="#" class="m1-v">
+                <input type="text" placeholder="Your e-mail adress" class="m1-v" id="email-input">
+                <button class="bttn m1-v">Sign up for newsletter</button>
+                <h6 class="m1-v d-flex align-center"><input type="checkbox"><label>I accept <span class="pr-color">the personal data management.</span></label></h6>
+            </form>
+        </div>
+        <div>
+            <h3 class="m1-v">How to buy</h3>
+            <ul>
+                <li>Payment methods</li>
+                <li>Order and pick up</li>
+                <li>Order with delivery</li>
+                <li>Shopping over the phone</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3 class="m1-v">Help</h3>
+            <ul>
+                <li>Contact</li>
+                <li>Online Help</li>
+                <li>Our commitments</li>
+                <li>Give feedback</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3 class="m1-v">Services</h3>
+            <ul>
+                <li>Transport</li>
+                <li>Design Service</li>
+                <li>Paint an plaster mixing service</li>
+                <li>Dimensioning and assembly service</li>
+                <li>Return of used equipment</li>
+                <li>Additional services</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3 class="m1-v">About</h3>
+            <ul>
+                <li>About us</li>
+                <li>Press office</li>
+                <li>For suppliers</li>
+                <li>Regulations</li>
+                <li>Privacy policy</li>
+                <li>Cookies</li>
+                <li>Personal data request</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="full-width p2-h bg-light d-flex space-between align-center p2-v m1-v">
+        <div class="d-flex space-between align-center">
+            <i class="fa-regular fa-copyright"></i>
+            <p>2021 Divante S.A.</p>
+        </div>
+        <div class="d-flex space-between align-center p2-h">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+    <script src="fontawesome/js/all.min.js"></script>
+</body>
+</html>
