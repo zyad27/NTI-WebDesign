@@ -99,15 +99,15 @@ button:hover{ color: var(--primaryColor); background-color: transparent; cursor:
 
 .fa-star{
     top: 0;
-    right: 0;
+    right: -17%;
 }
 .fa-shield-halved{
-    bottom: 0;
-    right: 0;
+    bottom: 5%;
+    right: -17%;
 }
 .fa-share-nodes{
     top: 80%;
-    right: 0;
+    right: -17%;
 }
 
 #discount {
@@ -129,8 +129,9 @@ button:hover{ color: var(--primaryColor); background-color: transparent; cursor:
 }
 
 #inStock{
-    bottom: 0;
+    bottom: 5%;
     left: 0;
+    font-size: 90%;
 }
 
 #products-container h5 {
@@ -276,9 +277,31 @@ footer div {
 }
 
 /************************************** Responsive desing **************************************/
-@media (max-width: 426px) {
-    
+@media (min-width: 769px) and (max-width: 1024px) {
+    #bottom-nav > div {
+        width: 50%;
+    }
+    #btm-nav-icon-container{
+        justify-content: end;
+    }
+    #products-container { flex-wrap: nowrap;}
+    #products-container img { width: 100%;}
+    .fa-share-nodes {top: 68%;}
+    #offer img {
+        height: 85px;
+    }
+    #offer button {
+        width: 20%;
+    }
+    #offer-text {
+        width: calc(100% - 35%);
+    }
+    #van-img { width: 100%;}
+    footer div {
+        width: 20%;
+    }
 }
+
 
 @media (max-width: 769px) {
     .bttn { background-color: var(--primaryColor); border-radius: 20px; border: 2px solid var(--primaryColor); padding: 5px 10px; color: var(--whiteColor);}
@@ -343,27 +366,74 @@ footer div {
     }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-    #bottom-nav > div {
-        width: 50%;
-    }
-    #btm-nav-icon-container{
-        justify-content: end;
-    }
+
+
+@media (max-width: 427px) {
+    #top-nav{font-size: 50%;}
+    #top-nav > div{width: 50%;}
+    .notify { width: 6px; height: 6px; border-radius: 50%; background-color: red; text-align: center; color: var(--whiteColor); font-size: 5px; font-weight: 200;}
+    #middle-nav {font-size: 70%;}
+    .bttn { background-color: var(--primaryColor); border-radius: 10px; border: 1px solid var(--primaryColor); padding: 2.5px 5px; color: var(--whiteColor);}
+    input::placeholder { font-size: 50%;}
+    .fa-magnifying-glass {font-size: 90%;}
+    #search-bar {padding: 2px 5px; align-self: center;}
+    #middle-nav button{font-size: 60%;}
+    #bottom-nav {font-size: 50%;}
+    h2{font-size: 80%;}
+    h3 {font-size: 50%;}
+    p{font-size: 50%;}
+    .side-h5{ font-size: 60%;}
     #products-container { flex-wrap: nowrap;}
     #products-container img { width: 100%;}
-    .fa-share-nodes {top: 68%;}
+    .fa-star, .fa-shield-halved, .fa-share-nodes {font-size: 40%;}
+    #inStock{font-size: 40%;}
+    #discount {
+        width: 20px;
+        height: 10px;
+        font-size: 20%;
+    }
+    #products-container p {font-size: 30%;}
+    #products-container h5 {
+        font-size: 40%;
+        font-weight: 500;
+        padding: 5px 0;
+    }
+    
+    b {
+        font-size: 11px;
+    }
+    #products-container button {
+        margin-top: 8px;
+        font-size: 50%;
+    }
+    #offer {
+        padding: 0.3% 5%;
+    }
     #offer img {
-        height: 85px;
+        height: 65px;
     }
     #offer button {
         width: 20%;
+        font-size: 40%;
     }
     #offer-text {
-        width: calc(100% - 35%);
+        width: 40%;
     }
-    #van-img { width: 100%;}
-    footer div {
-        width: 20%;
+    #offer-text span {
+        font-size: 150%;
     }
+    #cat-titles {
+        font-size: 6px;
+        font-weight: 200;
+        padding: 5px 0;
+        border-radius: 0 0 5px 5px;
+    }
+    #split-info button {font-size: 50%;}
+    #new {font-size: 40%;}
+    #van-info button {width: 50%; font-size: 40%; margin-top: 5px;}
+    #event-card button {font-size: 40%;}
+    ul li { margin: 5px 0; font-size: 7px;}
+    #sign-in button {font-size: 40%;}
+    input[type="checkbox"]{width: 20%;}
+    .fa-facebook, .fa-instagram, .fa-youtube, .fa-copyright {font-size: 60%;}
 }
