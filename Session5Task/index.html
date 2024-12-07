@@ -26,11 +26,11 @@
                 </div>
                 <h5>Messages</h5>
             </div>
-            <div class="d-flex"><i class="fa-regular fa-user m1-h"></i><h5>Username</h5></div>
+            <div class="d-flex"><i class="fa-regular fa-circle-user m1-h"></i><h5>Username</h5></div>
         </div>
     </nav>
 
-    <nav id="middle-nav" class="container d-flex space-between p1-v ">
+    <nav id="middle-nav" class="container d-flex space-between p1-v align-center">
         <h3>Commerce</h3>
         <div id="search-bar">
             <form action="#">
@@ -42,21 +42,21 @@
     </nav>
 
     <nav id="bottom-nav" class="p2-h p1-v bg-light d-flex space-between full-width align-center">
-        <div class="d-flex half-width space-around">
-            <h4>Home&Garden</h4>
-            <h4>Motors</h4>
-            <h4>Electronics</h4>
-            <h4>Office Equipment</h4>
+        <div class="d-flex half-width ">
+            <h4 class="m2-h">Home&Garden</h4>
+            <h4 class="m2-h">Motors</h4>
+            <h4 class="m2-h">Electronics</h4>
+            <h4 class="m2-h">Office Equipment</h4>
         </div>
-        <div class="d-flex qrt-width space-between align-center">
-            <div id="btm-icon">
+        <div id="btm-nav-icon-container" class="d-flex qrt-width align-center">
+            <div id="btm-icon" class="m2-h">
                 <div class="p-relative"><i class="fa-solid fa-shield-halved "></i>
                     <div id="btm-msg" class="p-absolute notify">5</div>
                 </div>
                 <h5>COMPARE</h5>
             </div>
 
-            <div id="btm-icon" class="p-relative">
+            <div id="btm-icon" class="p-relative m2-h">
                 <div class="p-relative"><i class="fa-regular fa-star"></i>
                     <div id="btm-msg" class="p-absolute notify">3</div>
                 </div>
@@ -64,7 +64,7 @@
                 <h5>FAVOURITES</h5>
             </div>
 
-            <div id="btm-icon" class="p-relative">
+            <div id="btm-icon" class="p-relative m2-h">
                 <div class="p-relative"><i class="fa-solid fa-cart-shopping"></i>
                     <div id="btm-msg" class="p-absolute notify">21</div>
                 </div>
@@ -97,10 +97,10 @@
                 <div class="p-relative">
                     <img src="images/products/product image (1).png" alt="">
                     <i class="fa-regular fa-star pr-color icons-bg p-absolute"></i>
-                <i class="fa-solid fa-shield-halved pr-color p-absolute"></i>
-                <i class="fa-solid fa-share-nodes pr-color p-absolute"></i>
-                <div id="discount" class="p-absolute">-30%</div>
-                <div id="inStock" class="p-absolute check-icons"><i class="fa-regular fa-circle-check"></i> in stock</div>
+                    <i class="fa-solid fa-shield-halved pr-color p-absolute"></i>
+                    <i class="fa-solid fa-share-nodes pr-color p-absolute"></i>
+                    <div id="discount" class="p-absolute">-30%</div>
+                    <div id="inStock" class="p-absolute check-icons"><i class="fa-regular fa-circle-check"></i> in stock</div>
                 </div>
                 <div id="product-details">
                     <p class="muted-text">Good Home | Part no.125</p>
@@ -281,7 +281,7 @@
     </section>
 
     <section id="split-screen" class="container m5-v d-flex space-between">
-        <div><img src="images/image-split.png" alt="" class="img-fluid"></div>
+        <div><img src="images/image-split.png" alt="" class="img-fluid full-height"></div>
         <div id="split-info" class="bg-primary">
             <h2>Buy this bundle and save $100</h2>
             <p>Longer sentence, for just two lines <br> and it could be very very long</p>
@@ -306,13 +306,13 @@
         </div>
     </section>
 
-    <section id="van" class="p2-h d-flex space-around m5-v bg-light">
+    <section id="van" class="p2-h d-flex space-around m5-v bg-light align-center">
         <div id="van-info" class="half-width">
             <h2>DPD delivery already available!</h2>
-            <p>Choose DPD for speed, ease and convenience.  Track your parcel in real time. This will help you plan your work while waiting for the parcel.</p>
+            <p>Choose DPD for speed, ease and convenience.Track your parcel in real time. This will help you plan your work while waiting for the parcel.</p>
             <button class="bttn">Show More</button>
         </div>
-        <div class="half-width"><img src="images/image-van.png" alt=""></div>
+        <div class="half-width"><img src="images/image-van.png" alt="" id="van-img"></div>
     </section>
 
     <section id="events" class="container m5-v">

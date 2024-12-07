@@ -15,12 +15,15 @@
 .container{ width: 90%; margin-left: auto; margin-right: auto;}
 .img-fluid {max-width: 100%; height: auto;}
 .full-width {width: 100%;}
+.full-height {height: 100%;}
 .half-width {width: 40%;}
+.w-50 {width: 50%;}
 .qrt-width { width: 20%;}
 .d-flex {display: flex; flex-wrap: wrap;}
 .flex-column {flex-direction: column;}
 .space-between { justify-content: space-between;}
 .space-around { justify-content: space-around;}
+.space-evenly { justify-content: space-evenly;}
 .align-center {align-items: center;}
 .justify-center {justify-content: center;}
 .p1-h {padding-right: 1%; padding-left: 1%;}
@@ -28,6 +31,7 @@
 .p1-v {padding-top: 1%; padding-bottom: 1%;}
 .p2-v {padding-top: 2%; padding-bottom: 2%;}
 .m1-h {margin-right: 10px;}
+.m2-h {margin-right: 20px;}
 .m1-v {margin-top: 10px;}
 .m5-v {margin-top: 70px;}
 .p-relative {position: relative;}
@@ -49,12 +53,11 @@ h4 { font-size: 80%; font-weight: 600;}
 input { border: none;}
 ul { list-style-type: none;}
 ul li { margin: 10px 0; font-size: 15px;}
+input:focus {outline: none;}
 a {color: var(--blackColor);}
-button:hover{
-    color: var(--primaryColor);
-    background-color: transparent;
-    cursor: pointer;
-}
+button:hover{ color: var(--primaryColor); background-color: transparent; cursor: pointer; }
+
+
 
 #Phone-icon {
     color: var(--primaryColor);
@@ -69,6 +72,10 @@ button:hover{
     border: 1px solid var(--lightMutedColor);
     padding: 5px 10px;
     width: calc(90% / 3);
+}
+
+#search-bar input {
+    width: 95%;
 }
 
 #btm-icon {
@@ -186,7 +193,7 @@ b {
 }
 
 #split-screen div {
-    width: 50%;
+    width: 48%;
     border-radius: 10px;
 }
 
@@ -266,4 +273,97 @@ b {
 footer div {
     width: 11%;
     color: var(--mutedColor);
+}
+
+/************************************** Responsive desing **************************************/
+@media (max-width: 426px) {
+    
+}
+
+@media (max-width: 769px) {
+    .bttn { background-color: var(--primaryColor); border-radius: 20px; border: 2px solid var(--primaryColor); padding: 5px 10px; color: var(--whiteColor);}
+    #search-bar a {font-size: 80%;}
+    #search-bar input {width: 80%;}
+    #top-nav > div{
+        width: 50%;
+    }
+    #bottom-nav > div {
+        width: 50%;
+    }
+    .m2-h{margin-right: 10px;}
+    #btm-nav-icon-container{
+        justify-content: end;
+    }
+    #our-brands img {width: 20%;}
+    #products-container { flex-wrap: nowrap;}
+    #products-container img { width: 100%;}
+    .fa-share-nodes {top: 70%;}
+    #offer {
+        padding: 0.3% 5%;
+    }
+    #offer img {
+        height: 85px;
+    }
+    #offer button {
+        width: 15%;
+    }
+    #offer-text {
+        width: calc(100% - 35%);
+    }
+    #cat-titles {
+        font-size: 10px;
+        font-weight: 400;
+        padding: 10px 0;
+        border-radius: 0 0 10px 10px;
+    }
+    #split-info button {
+        width: 50%;
+        font-weight: 500;
+    }
+    #van-img { width: 100%;}
+    #van-info button {width: 50%;}
+    #event-card button {
+        width: 100%;
+        background-color: transparent;
+        color: var(--primaryColor);
+    }
+    footer div {
+        width: 20%;
+    }
+    #last-sec div{
+        width: 10%;
+    }
+    
+    #sign-in p {
+        font-size: 10px;
+    }
+    
+    #sign-in h6 {
+        font-size: 8px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #bottom-nav > div {
+        width: 50%;
+    }
+    #btm-nav-icon-container{
+        justify-content: end;
+    }
+    #products-container { flex-wrap: nowrap;}
+    #products-container img { width: 100%;}
+    .fa-share-nodes {top: 68%;}
+    #offer img {
+        height: 85px;
+    }
+    #offer button {
+        width: 20%;
+    }
+    #offer-text {
+        width: calc(100% - 35%);
+    }
+    #van-img { width: 100%;}
+    footer div {
+        width: 20%;
+    }
 }
