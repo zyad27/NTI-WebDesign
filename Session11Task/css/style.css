@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lilita+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Shrikhand&display=swap');
+
+* {
+    font-family: "Rubik", serif;
+}
+
+:root {
+    --main-dark-color: #224F34;
+    --main-light-color: #C2EFD4;
+    --float-icon-color: #10FF70;
+    --white-color: white;
+    --black-color: black;
+    --gold-color: #F5D426;
+}
+
+a {
+    text-decoration: none;
+}
+.w-30{width: 30%;}
+.active {
+    color: var(--main-dark-color) !important;
+    border-bottom: 2px solid var(--main-dark-color);
+}
+
+.gold-text {
+    color: var(--gold-color);
+}
+
+.main-text {
+    color: var(--main-dark-color);
+}
+
+.logo-font {
+    font-family: "Shrikhand", serif;
+    font-size: 150%;
+}
+
+
+.main-bg {
+    background-color: var(--main-light-color) !important;
+}
+
+.dark-color-bg {
+    background-color: var(--main-dark-color) !important;
+}
+
+.font-color {
+    color: var(--main-dark-color) !important;
+}
+
+.btn-main {
+    border: 2px solid var(--main-dark-color);
+    color: #224F34;
+}
+
+.btn-main:hover .fa-arrow-right-long {
+    color: var(--white-color);
+}
+
+.btn-main:hover {
+    background-color: var(--main-dark-color);
+    color: var(--white-color);
+}
+
+nav .btn {
+    border: 1px solid var(--main-dark-color);
+}
+
+nav .btn:hover {
+    border: 1px solid var(--main-dark-color);
+    color: var(--white-color) !important;
+    background-color: var(--main-dark-color);
+}
+
+
+#floating-icon {
+    width: 7px;
+    height: 7px;
+    background-color: var(--float-icon-color);
+    border-radius: 50%;
+    border: 1px solid var(--main-light-color);
+    bottom: -50%;
+    right: -2%;
+    box-shadow: 2px 1px 7px 0px black;
+}
+
+#image-div {
+    border-radius: 20% 7% 20% 14%;
+    box-shadow: inset 2px 1px 12px -4px black;
+}
+
+#image-div img {
+    width: 80%;
+}
+
+#dots1 {
+    top: 25%;
+    right: 0;
+}
+
+#dots2 {
+    bottom: 20%;
+    left: 5%;
+}
+
+#dots3 {
+    left: 0;
+    bottom: 10%;
+}
+
+#dots3 img {
+    width: 5rem;
+}
+
+#white-div {
+    width: 60px;
+    height: 60px;
+}
