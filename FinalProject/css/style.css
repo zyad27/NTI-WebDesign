@@ -1,0 +1,7 @@
+*{font-family: "Poppins", serif;}
+
+li { list-style: none;}
+
+.icon-link-hover:hover{
+    color: var(--bs-primary); 
+}
