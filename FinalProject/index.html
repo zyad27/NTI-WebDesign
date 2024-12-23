@@ -66,7 +66,7 @@
 
     <section id="slider">
         <div id="carouselExampleDark" class="carousel carousel-dark slide">
-            <div class="carousel-indicators">
+            <div class="carousel-indicators align-items-end">
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
@@ -76,50 +76,107 @@
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
                     aria-label="Slide 4"></button>
             </div>
+            <div id="blackScreen" class="d-block w-100 full-height position-absolute"></div>
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="images/slider/1.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                    </div>
+                    <img src="images/slider/1.jpg" class="d-block w-100 full-height" alt="...">
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
-                    <img src="images/slider/2.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
+                    <img src="images/slider/2.jpg" class="d-block w-100 full-height" alt="...">
+                    <div class="carousel-caption d-none d-md-block position-mid">
+                        <h5 class="text-capitalize text-light">what you do today for people</h5>
+                        <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit Dicta quia
+                            suscipit enim eveniet voluptatibus repudiandae.</p>
+                        <button class="BlueBtn">
+                            <p></p>Get Start Now
+                        </button>
+                        <button class="TransBtn">
+                            <p></p>Contact Us
+                        </button>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/slider/3.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
+                    <img src="images/slider/3.jpg" class="d-block w-100 full-height" alt="...">
+                    <div class="carousel-caption d-none d-md-block position-mid">
+                        <h5 class="text-capitalize text-light">what you do today for people</h5>
+                        <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit Dicta quia
+                            suscipit enim eveniet voluptatibus repudiandae.</p>
+                        <button class="BlueBtn">
+                            <p></p>Get Start Now
+                        </button>
+                        <button class="TransBtn">
+                            <p></p>Contact Us
+                        </button>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/slider/4.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
+                    <img src="images/slider/4.jpg" class="d-block w-100 full-height" alt="...">
+                    <div class="carousel-caption d-none d-md-block position-mid">
+                        <h5 class="text-capitalize text-light">what you do today for people</h5>
+                        <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit Dicta quia
+                            suscipit enim eveniet voluptatibus repudiandae.</p>
+                        <button class="BlueBtn">
+                            <p></p>Get Start Now
+                        </button>
+                        <button class="TransBtn">
+                            <p></p>Contact Us
+                        </button>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </section>
 
-
+    <section id="aboutUs" class="container mt-5 d-flex flex-column align-items-center position-relative">
+        <h2 class="text-capitalize text-black">about us</h2>
+        <p class="text-muted text-capitalize">about us</p>
+        <div id="img-card position-relative">
+            <div class="card mb-3 border-0">
+                <div class="row g-0 justify-content-center">
+                    <div class="col-md-4">
+                        <img src="images/abt-us.jpg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-body">
+                            <p class="card-text"><small class="text-body-secondary">Dorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit nisi a dictum tristique. Nullam urna metus, vestibulum ac sodales eSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam remrutrumDorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis.</small></p>
+                            <p class="card-text"><small class="text-body-secondary">Dorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit nisi a dictum tristique. Nullam urna metus, vestibulum ac sodales eSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam remrutrumDorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis.</small></p>
+                            <button class="BlueBtn shadow-none"><p></p>Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="floatContainer" class="position-absolute d-flex flex-column pt-3 pe-3">
+                <div id="floatCard" class="d-flex">
+                    <p class="p-3 border-end border-dark-subtle border-1"><i id="floatIcon" class="fa-solid fa-bullhorn fs-1"></i></p>
+                    <div class="ms-4">
+                        <h5 class="text-black text-capitalize">marketing</h5>
+                        <p class="card-text"><small class="text-body-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</small></p>
+                    </div>
+                </div>
+                <div id="floatCard" class="d-flex">
+                    <p class="p-3 border-end border-dark-subtle border-1"><i id="floatIcon" class="fa-solid fa-sliders fs-1"></i></p>
+                    <div class="ms-4">
+                        <h5 class="text-black text-capitalize">great usability</h5>
+                        <p class="card-text"><small class="text-body-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</small></p>
+                    </div>
+                </div>
+                <div id="floatCard" class="d-flex">
+                    <p class="p-3 border-end border-dark-subtle border-1"><i id="floatIcon" class="fa-solid fa-display fs-1"></i></p>
+                    <div class="ms-4">
+                        <h5 class="text-black text-capitalize">unique desgin</h5>
+                        <p class="card-text"><small class="text-body-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</small></p>
+                    </div>
+                </div>
+                <div id="floatCard" class="d-flex">
+                    <p class="p-3 border-end border-dark-subtle border-1"><i id="floatIcon" class="fa-regular fa-thumbs-up fs-1"></i></p>
+                    <div class="ms-4">
+                        <h5 class="text-black text-capitalize">quick & powerful</h5>
+                        <p class="card-text"><small class="text-body-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- ----------------------------script linking---------------------------- -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

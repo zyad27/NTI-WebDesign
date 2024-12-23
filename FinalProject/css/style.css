@@ -1,7 +1,130 @@
 *{font-family: "Poppins", serif;}
 
+
+.full-height {height: 100vh;}
+.position-mid {top: 50%;}
 li { list-style: none;}
 
 .icon-link-hover:hover{
     color: var(--bs-primary); 
+}
+.carousel-indicators{
+    flex-direction: column;
+    right: 5%;
+    top: 20%;
+    margin: 0;
+    z-index: 3;
+}
+.carousel-indicators [data-bs-target]{
+    width: 8px;
+    height: 8px;
+    opacity: 90%;
+    background-color: var(--bs-white) !important;
+    transition: all 0.3s;
+}
+.carousel-indicators [data-bs-target]:hover{
+    transform: scale(1.5);
+    background-color: transparent !important;
+    border: 1px solid var(--bs-white);
+}
+#blackScreen{
+    background-color: var(--bs-black);
+    z-index: 2;
+    opacity: 80%;
+}
+.carousel-caption{
+    z-index: 4;
+}
+.BlueBtn{
+    border: 2px solid var(--bs-primary);
+    background-color: var(--bs-primary);
+    border-radius: 30px;
+    color: var(--bs-white);
+    padding: 1% 3%;
+    box-shadow: inset 0px 6px 15px -8px var(--bs-black);
+    position: relative;
+    overflow: hidden;
+    
+}
+.BlueBtn p {
+    position: absolute;
+    background: linear-gradient(90deg,transparent,rgba(255, 255, 255,0.5),transparent);
+    width: 20%;
+    height: 400%;
+    top: -150%;
+    left: -50%;
+    transform: rotate(45deg);
+    transition: 0.8s;
+}
+.BlueBtn:hover p {left: 150%;}
+.TransBtn{
+    border: 2px solid var(--bs-white);
+    color: var(--bs-white);
+    padding: 1% 3%;
+    background-color: transparent;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.TransBtn p {
+    position: absolute;
+    background: linear-gradient(90deg,transparent,rgba(255, 255, 255,0.5),transparent);
+    width: 20%;
+    height: 400%;
+    top: -150%;
+    left: -50%;
+    transform: rotate(45deg);
+    transition: 0.8s;
+}
+.TransBtn:hover{
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+.TransBtn:hover p {left: 150%;}
+
+#floatCard #floatIcon, #floatCard h5{transition: 0.5s;}
+#floatCard:hover #floatIcon{color: var(--bs-primary);}
+#floatCard:hover h5{color: var(--bs-primary) !important;}
+#floatContainer{
+    background-color: var(--bs-white);
+    top: 45%;
+    left: -7%;
+    box-shadow: -2px -2px 20px -12px var(--bs-black);
+}
+#aboutUs h2::before {
+    content: "";
+    width: 70px;
+    height: 3px;
+    background-color: var(--bs-primary);
+    right: 38%;
+    top: 5%;
+    position: absolute;
+}
+#aboutUs .text-muted::before {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: var(--bs-primary);
+    right: 41%;
+    top: 3%;
+    position: absolute;
+}
+#aboutUs h2::after {
+    content: "";
+    width: 70px;
+    height: 3px;
+    background-color: var(--bs-primary);
+    right: 57%;
+    top: 5%;
+    position: absolute;
+}
+#aboutUs .text-muted::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: var(--bs-primary);
+    right: 57%;
+    top: 3%;
+    position: absolute;
 }
