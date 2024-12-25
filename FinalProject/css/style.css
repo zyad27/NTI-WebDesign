@@ -3,10 +3,20 @@
 
 .full-height {height: 100vh;}
 .position-mid {top: 50%;}
+.card-w-h {
+    height: 215px;
+    width: 425px;
+}
+
 li { list-style: none;}
 
 .icon-link-hover:hover{
     color: var(--bs-primary); 
+}
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 }
 .carousel-indicators{
     flex-direction: column;
@@ -88,43 +98,48 @@ li { list-style: none;}
 #floatCard:hover h5{color: var(--bs-primary) !important;}
 #floatContainer{
     background-color: var(--bs-white);
-    top: 45%;
-    left: -7%;
+    top: 20%;
+    left: -3%;
     box-shadow: -2px -2px 20px -12px var(--bs-black);
 }
-#aboutUs h2::before {
-    content: "";
-    width: 70px;
-    height: 3px;
-    background-color: var(--bs-primary);
-    right: 38%;
-    top: 5%;
-    position: absolute;
+.fa-display{width: 40px;}
+
+#ourServices{
+    background-image: url(../images/services.png);
+    background-size: cover;
+    background-attachment: fixed;
 }
-#aboutUs .text-muted::before {
-    content: "";
-    width: 30px;
-    height: 2px;
-    background-color: var(--bs-primary);
-    right: 41%;
-    top: 3%;
-    position: absolute;
+.serv-hover-container{
+    overflow: hidden;
 }
-#aboutUs h2::after {
-    content: "";
-    width: 70px;
-    height: 3px;
-    background-color: var(--bs-primary);
-    right: 57%;
-    top: 5%;
+.hover-child{
     position: absolute;
+    top: 100%;
+    transition: 0.3s;
 }
-#aboutUs .text-muted::after {
-    content: "";
-    width: 30px;
-    height: 2px;
-    background-color: var(--bs-primary);
-    right: 57%;
-    top: 3%;
-    position: absolute;
+.serv-hover-container:hover .hover-child {
+    top: 0;
+}
+
+
+#ourWork .active{
+    color: var(--bs-primary);
+}
+
+#ourWork li:hover{
+    color: var(--bs-primary);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.work-card-wh{
+    max-width: 390px; 
+    min-width: 370px;
+    bottom: 3%;
+    transform: rotate3d(0,1,0, 90deg);
+    transition: 0.5s;
+}
+
+.our-work-hover-container:hover .work-card-wh{
+    transform: rotate3d(0,1,0, 0deg);
 }
