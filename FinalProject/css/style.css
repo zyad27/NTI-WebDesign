@@ -7,6 +7,7 @@
     height: 215px;
     width: 425px;
 }
+.team-w{width: 400px; height: 370px;}
 
 li { list-style: none;}
 
@@ -142,4 +143,19 @@ nav{
 
 .our-work-hover-container:hover .work-card-wh{
     transform: rotate3d(0,1,0, 0deg);
+}
+.team-icons{transition: 0.2s;}
+.team-icons:hover{ color: var(--bs-black) !important;}
+.team-card-container {overflow-y: hidden; transition: 0.5s;}
+.team-details{
+    top: 85%;
+    box-shadow: 0px -6px 10px -4px rgba(0,0,0,0.3);
+    transition: 0.5s;
+}
+.team-card-container:hover .team-details{
+    top: 38%;
+}
+.price-shadow{
+    z-index: 5;
+    box-shadow: 0px 1px 13px -4px var(--bs-black);
 }
