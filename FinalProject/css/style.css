@@ -100,7 +100,33 @@ li { list-style: none;}
     border-color: var(--bs-primary);
 }
 .TransBtn:hover p {left: 150%;}
-
+/* ----------------------------------------------------------- */
+.whiteBtn{
+    border: 2px solid var(--bs-primary);
+    color: var(--bs-primary);
+    padding: 1% 3%;
+    background-color: var(--bs-white);
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.whiteBtn p {
+    position: absolute;
+    background: linear-gradient(90deg,transparent,rgba(13, 110, 253, 0.15),transparent);
+    width: 20%;
+    height: 400%;
+    top: -150%;
+    left: -50%;
+    transform: rotate(45deg);
+    transition: 0.8s;
+}
+.whiteBtn:hover{
+    background-color: var(--bs-white);
+    border-color: var(--bs-primary);
+    color: var(--bs-primary);
+}
+.whiteBtn:hover p {left: 150%;}
 #floatCard #floatIcon, #floatCard h5{transition: 0.5s;}
 #floatCard:hover #floatIcon{color: var(--bs-primary);}
 #floatCard:hover h5{color: var(--bs-primary) !important;}
@@ -207,3 +233,27 @@ button[role = "presentation"]{
 .clinet-image {
     filter: drop-shadow(-3px 0px 7px rgba(0, 0, 0, 0.4));
 }
+.purchase-sec{
+    font-size: 4rem;
+    position: absolute;
+    top: -88%;
+    left: -4%;
+    opacity: 30%;
+}
+.contact-btn{
+    text-transform: capitalize;
+    border: none;
+    background-color: var(--bs-white);
+    color: var(--bs-dark);
+    padding: 1% 3%;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.contact-btn:hover{
+    color: var(--bs-white);
+    background-color: var(--bs-primary);
+}
+footer{
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.5);
+}
+footer h6 {cursor: pointer;}
