@@ -33,7 +33,7 @@ window.addEventListener("scroll", ()=>{
 if(pageUp){
 
     window.addEventListener("scroll", ()=>{
-        if ((window.scrollY) < (window.innerHeight)) {
+        if ((window.scrollY) <= (window.innerHeight)) {
             pageUp.classList.add("d-none")
         }
         else pageUp.classList.remove("d-none")
