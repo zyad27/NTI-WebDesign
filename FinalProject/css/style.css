@@ -277,8 +277,8 @@ footer h6 {cursor: pointer;}
     margin-top: 3%;
     border: none;
     outline: none;
-    color: var(--bs-white);
-    background-color: var(--bs-primary);
+    color: var(--bs-dark);
+    background-color: var(--bs-white);
     padding: 1% 2%;
     border-radius: 30px;
     font-weight: 500;
@@ -286,7 +286,8 @@ footer h6 {cursor: pointer;}
 }
 
 .contact-btn:hover {
-    background-color: var(--bs-dark);
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
 }
 
 #pageUp{

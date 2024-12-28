@@ -7,15 +7,15 @@ const touchForm = document.querySelector("#touchForm")
 
 const checkValidation = (formName, fieldName, len=0)=>{
     if(!formName[fieldName].value){
-        formName[formName].nextSibling.nextSibling.innerHTML = `<p class="alert alert-danger mt-2"> ${fieldName} is required </p>`
+        formName[fieldName].nextSibling.nextSibling.innerHTML = `<p class="alert alert-danger mt-2"> ${fieldName} is required </p>`
         return false
     }
-    else if (formName[fieldName].value.lenght < len){
-        formName[formName].nextSibling.nextSibling.innerHTML = `<p class="alert alert-danger mt-2"> ${fieldName} should be more than ${len} characters </p>`
+    else if (formName[fieldName].value.length <= len){
+        formName[fieldName].nextSibling.nextSibling.innerHTML = `<p class="alert alert-danger mt-2"> ${fieldName} should be more than ${len} characters </p>`
         return false
     }
     else{
-        formName[formName].nextSibling.nextSibling.innerHTML = " "
+        formName[fieldName].nextSibling.nextSibling.innerHTML = " "
         return true
     }
 }
@@ -83,10 +83,21 @@ if(touchForm){
     touchForm.addEventListener("submit", (e)=>{
         e.preventDefault()
         checkValidation(touchForm, "name", 5)
-        checkValidation(touchForm, "email")
         checkValidation(touchForm,"subject", 8)
-        
+        if(!touchForm.email.value){
+            touchForm.email.nextSibling.nextSibling.innerHTML = `<p class="alert alert-danger mt-2"> e-mail is required </p>`
+            return false
+        }
+        else if (!(touchForm.email.value).includes("@") && !(touchForm.email.value).includes(".com")){
+            touchForm.email.nextSibling.nextSibling.innerHTML = `<p class="alert alert-danger mt-2"> e-mail should be like example@mail.com </p>`
+            return false
+        }
+        else {
+            touchForm.email.nextSibling.nextSibling.innerHTML = ""
+            return true
+        }
     })
+    
 }
 
 $('.owl-carousel').owlCarousel({
