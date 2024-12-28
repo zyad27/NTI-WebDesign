@@ -3,6 +3,7 @@ html{ scroll-behavior: smooth;}
 
 .full-height {height: 100vh;}
 .w-30 {width: 30%;}
+.w-0 {width: 0 !important;}
 .h-50{height: 50%;}
 .fs-80{font-size: 80%;}
 .position-mid {top: 50%;}
@@ -17,13 +18,7 @@ li { list-style: none;}
 .icon-link-hover:hover{
     color: var(--bs-primary); 
 }
-/* nav{
-    position: sticky;
-    top: 0;
-    z-index: 9999;
-    background-color: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-} */
+
 .scrolled-nav{
     box-shadow: 0px 7px 8px -10px rgba(0,0,0,0.5);
 }
@@ -292,4 +287,44 @@ footer h6 {cursor: pointer;}
 
 .contact-btn:hover {
     background-color: var(--bs-dark);
+}
+
+#pageUp{
+    position: fixed;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--bs-primary);
+    border-radius: 50%;
+    bottom: 10%;
+    right: 5%;
+    z-index: 9999;
+    cursor: pointer;
+}
+.colors-fixed{
+    position: fixed;
+    top: 20%;
+    left: 0;
+    z-index: 9997;
+}
+.toggle-fixed{
+    position: fixed;
+    top: 33%;
+    left: 0;
+    z-index: 9997;
+}
+#colorPick{
+    width: 15%;
+    height: 13vh;
+    transition: 1s;
+}
+#toggleVisible{
+    width: 4%;
+    height: 6vh;
+    cursor: pointer;
+    box-shadow: 1px 0px 8px 0px rgba(0, 0, 0, 0.4);
+}
+
+.colors {
+    width: 20%;
+    height: 4vh;
 }
